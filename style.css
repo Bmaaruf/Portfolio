@@ -22,6 +22,17 @@ header {
   max-width: 80rem;
   align-items: center;
   font-weight: 600;
+  position: sticky;
+  top: 0;
+  background-color: #fedab9;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #211313;
 }
 
 .logo {
@@ -32,6 +43,7 @@ header {
   display: flex;
   list-style: none;
   gap: 2rem;
+  white-space: nowrap;
 }
 
 .nav-list a:link,
@@ -74,7 +86,7 @@ header {
 }
 
 .about-desc {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .about-section {
@@ -133,7 +145,7 @@ header {
 
 .project-desc {
   font-size: 1.2rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.8rem;
 }
 .project-grid {
   display: grid;
@@ -186,12 +198,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: nowrap;
   gap: 1.5rem;
   padding: 3rem;
   background-color: #eaac8b;
   max-width: 30rem;
   margin: 0 auto;
-  height: 22rem;
+  white-space: nowrap;
   border-radius: 1rem;
 }
 
@@ -218,7 +231,8 @@ header {
   font-weight: 600;
 }
 
-.form-inputs input {
+.form-inputs input,
+.form-inputs textarea {
   padding: 10px;
   outline: none;
   border: none;
@@ -227,6 +241,16 @@ header {
   font-weight: 600;
   background-color: #fedab9;
 }
+/* .form-inputs textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font: inherit;
+  font-weight: 600;
+  box-sizing: border-box;
+} */
 
 .form-inputs input:hover,
 .form-inputs input:focus-visible {
@@ -235,7 +259,8 @@ header {
   -moz-box-shadow: 0px 0px 11px -3px rgba(240, 113, 103, 0.74);
 }
 
-.form-inputs input::placeholder {
+.form-inputs input::placeholder,
+.form-inputs textarea::placeholder {
   color: #643b3b;
 }
 
@@ -255,4 +280,72 @@ header {
   background-color: #462929;
   cursor: pointer;
   color: #a5785f;
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 3.2rem 2rem;
+  }
+  .skills-section {
+    padding: 3.2rem 2rem;
+  }
+  .hero-head {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .profession {
+    text-align: center;
+    line-height: 1;
+    font-size: 4.4rem;
+  }
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recents-project {
+    padding: 3.2rem 2rem;
+  }
+
+  .contact-section {
+    padding: 3.2rem 2rem;
+  }
+  .form-head {
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 4em;
+  }
+  header {
+    padding: 3rem 2rem;
+  }
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger button on smaller screens */
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #f7e7ce;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
 }
