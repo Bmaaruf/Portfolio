@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Bash portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="my logo" class="logo" />
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#project">My Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="hero-section" id="hero">
+        <h1 class="hero-head">Hi Im Bashir Maaruf</h1>
+        <p class="profession">A Web Developer</p>
+      </section>
+
+      <!-- About section -->
+      <section class="about-section">
+        <div class="about-container">
+          <h2 class="about-title">About me</h2>
+          <p class="about-desc">
+            Im a passsionate web developer that love to solve real world problem
+            using technlogy. Im currently learning web developmnet to build
+            beatiful and scalable website. Im planning to start learning AI,
+            where i can be able to leverage AI into building Excellent websites.
+          </p>
+        </div>
+      </section>
+
+      <!-- skill section -->
+      <section class="skills-section" id="skills">
+        <h2 class="skills-head">My Skills over the year</h2>
+
+        <div class="skills-container">
+          <div class="skill-list">
+            <div class="skill-container">
+              <i class="devicon-html5-plain"></i>
+              <p class="skill-type">HTML5</p>
+            </div>
+            <p class="skill-desc">
+              I use HTML5 for building the structure of my websites
+            </p>
+            <p>Level: <strong>Advance</strong></p>
+          </div>
+          <div class="skill-list">
+            <div class="skill-container">
+              <i class="devicon-css3-plain"></i>
+              <p class="skill-type">CSS3</p>
+            </div>
+            <p class="skill-desc">
+              I use CSS to add styles to my websites making it more visual
+              appealing
+            </p>
+            <p>Level: <strong>Advance</strong></p>
+          </div>
+
+          <div class="skill-list">
+            <div class="skill-container">
+              <i class="devicon-javascript-plain"></i>
+              <p class="skill-type">Javascript</p>
+            </div>
+            <p class="skill-desc">
+              I use Javascript to add interactions to my websites. making it
+              more lively
+            </p>
+            <p>Level: <strong>Intermediate</strong></p>
+          </div>
+        </div>
+      </section>
+      <section class="recents-project" id="project">
+        <div class="projects-container">
+          <h2 class="project-title">Check out my works</h2>
+          <p class="project-desc">
+            This are the project i created over the time. Take time and go
+            through them
+          </p>
+          <div class="project-grid">
+            <div class="project">
+              <a
+                href="https://bash-hero-page.vercel.app/"
+                target="_blank"
+                class="project-card"
+              >
+                <h3 class="project-name">HERO PAGE</h3>
+                <span class="project-about">
+                  This is a simple hero page i created for myself
+                </span>
+                <p class="project-link">Check it out &rarr;</p></a
+              >
+            </div>
+
+            <div class="project">
+              <a
+                href="https://bash-decibullz-shop.vercel.app/"
+                target="_blank"
+                class="project-card"
+              >
+                <h3 class="project-name">DECIBULLZ PAGE</h3>
+                <span class="project-about">
+                  This is a hero page i created for an earplug company
+                </span>
+                <p class="project-link">Check it out &rarr;</p>
+              </a>
+            </div>
+
+            <div class="project">
+              <a
+                href="https://bash-sign-up-form.vercel.app/"
+                target="_blank"
+                class="project-card"
+              >
+                <h3 class="project-name">Sign up PAGE</h3>
+                <span class="project-about">
+                  This is a sign up page i created for a company that has sign
+                  in option also
+                </span>
+                <p class="project-link">Check it out &rarr;</p>
+              </a>
+            </div>
+
+            <div class="project">
+              <a
+                href="https://bash-registration-form.vercel.app/"
+                target="_blank"
+                class="project-card"
+              >
+                <h3 class="project-name">registration form</h3>
+                <span class="project-about">
+                  This is a registration form page that get information about a
+                  new user.
+                </span>
+                <p class="project-link">Check it out &rarr;</p>
+              </a>
+            </div>
+            <div class="project">
+              <a href="#" target="_blank" class="project-card">
+                <h3 class="project-name">my portfolio PAGE</h3>
+                <p class="project-about">
+                  This is my porftfolio page where you can know more about me
+                  and see all of the rojects i did.
+                </p>
+                <p class="project-link">Check it out &rarr;</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="contact-form">
+          <h2 class="form-head">Reach Out To Me</h2>
+          <div class="form-holds">
+            <div class="form-inputs">
+              <label for="name">Name: </label>
+              <input id="name" type="text" placeholder="Bash Maaruf" />
+            </div>
+            <div class="form-inputs">
+              <label for="email">Email: </label>
+              <input
+                id="email"
+                type="email"
+                placeholder="bashmaaruf@gmail.com"
+              />
+            </div>
+          </div>
+          <button class="btn">Contact Me</button>
+        </div>
+      </section>
+    </main>
+
+    <script href="script.js"></script>
+  </body>
+</html>
