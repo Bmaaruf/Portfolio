@@ -241,16 +241,6 @@ header {
   font-weight: 600;
   background-color: #fedab9;
 }
-/* .form-inputs textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  resize: vertical;
-  font: inherit;
-  font-weight: 600;
-  box-sizing: border-box;
-} */
 
 .form-inputs input:hover,
 .form-inputs input:focus-visible {
@@ -261,7 +251,7 @@ header {
 
 .form-inputs input::placeholder,
 .form-inputs textarea::placeholder {
-  color: #643b3b;
+  color: #643b3ba7;
 }
 
 .btn {
@@ -282,7 +272,14 @@ header {
   color: #a5785f;
 }
 
-@media (max-width: 480px) {
+footer {
+  background-color: #eaac8b;
+  font-weight: 600;
+  padding: 1.6rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
   .about-section {
     padding: 3.2rem 2rem;
   }
@@ -310,8 +307,12 @@ header {
   }
 
   .contact-section {
-    padding: 3.2rem 2rem;
+    padding: 3.2rem 1rem;
   }
+
+  /* .contact-form {
+    padding: 3rem 2rem;
+  } */
   .form-head {
     font-size: 1.6rem;
   }
